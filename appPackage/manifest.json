@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.0",
+  "id": "8e33a3d4-b2a3-4a76-b7bc-141e778d51d8",
+  "developer": {
+    "name": "Teams App, Inc.",
+    "websiteUrl": "https://www.example.com",
+    "privacyUrl": "https://www.example.com/privacy",
+    "termsOfUseUrl": "https://www.example.com/termofuse"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "SYSTRANBotTranslatorApp${{APP_NAME_SUFFIX}}",
+    "full": "full name for SYSTRANBotTranslatorApp"
+  },
+  "description": {
+    "short": "short description of SYSTRANBotTranslatorApp",
+    "full": "full description of SYSTRANBotTranslatorApp"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [],
+  "composeExtensions": [
+    {
+      "botId": "9f77eb3d-728c-4144-a9a6-6db7ca0839e4",
+      "commands": [
+        {
+          "id": "searchQuery",
+          "context": ["compose", "commandBox"],
+          "description": "Test command to run query",
+          "title": "Search",
+          "type": "query",
+          "parameters": [
+            {
+              "name": "searchQuery",
+              "title": "Search Query",
+              "description": "Your search query",
+              "inputType": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "configurableTabs": [],
+  "staticTabs": [],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["https://e925-113-190-254-54.ngrok-free.app/"]
+}
